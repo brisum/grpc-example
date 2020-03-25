@@ -1,0 +1,11 @@
+instancename: my-php-service          # Название сервиса. Преимущественно для логов
+host: ":50051"                        # Хост на котором будут приниматься запросы
+debug: false                          # Дебаг режим, так-же переключается через SIGUSR2
+
+target:
+  host: localhost                       # Адрес PHP-FPM
+  port: 5052                            # Порт PHP-FPM
+  scriptpath: /home/myuser/app/handlers # Параметры для вызова PHP
+  scriptname: server.php
+  clientip: 127.0.0.1
+  returnerror: true                     # Возвращать ошибку в полном виде?

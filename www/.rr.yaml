@@ -1,0 +1,8 @@
+grpc:
+  listen: "tcp://:50051"
+  proto: "./protos/helloworld.proto"
+  workers:
+    command: "php worker.php"
+    pool:
+      numWorkers: 1
+      maxJobs:    1

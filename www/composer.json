@@ -1,0 +1,22 @@
+{
+    "name": "grpc/grpc-demo",
+    "description": "gRPC example for PHP",
+    "authors": [
+        {
+            "name": "Oleksandr Manchenko",
+            "email": "omanchenko@brisum.com"
+        }
+    ],
+    "require": {
+        "grpc/grpc": "^v1.3.0",
+        "google/protobuf": "^v3.3.0",
+        "spiral/php-grpc": "^1.2",
+        "ext-grpc": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GPBMetadata\\": "src/GPBMetadata/",
+            "Helloworld\\": "src/Helloworld/"
+        }
+    }
+}
